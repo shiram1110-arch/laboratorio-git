@@ -3,52 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <title>Tutorial de Git</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Guía Básica de Git</h1>
-        <p>Aprende a usar Git paso a paso</p>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center p-4">
+        <h1>Guía Completa de Git</h1>
+        <p>Aprende Git desde cero 🚀</p>
     </header>
 
-    <main>
-        <section>
-            <h2>¿Qué es Git?</h2>
-            <p>
-                Git es un sistema de control de versiones que permite gestionar cambios en proyectos de software.
-            </p>
-        </section>
+    <!-- Contenido principal -->
+    <div class="container mt-4">
 
-        <section>
-            <h2>Instalación</h2>
-            <p>
-                Descarga Git desde su sitio oficial e instálalo en tu computadora.
-            </p>
-        </section>
+        <!-- Fila 1 -->
+        <div class="row">
+            <div class="col-md-6">
+                <section>
+                    <h2>¿Qué es Git?</h2>
+                    <p>
+                        Git es un sistema de control de versiones distribuido que permite
+                        registrar cambios en archivos y coordinar trabajo en equipo.
+                    </p>
+                </section>
+            </div>
 
-        <section>
-            <h2>Comandos Básicos</h2>
-            <ul>
-                <li><strong>git init</strong> - Inicializa un repositorio</li>
-                <li><strong>git add .</strong> - Agrega archivos al área de preparación</li>
-                <li><strong>git commit -m "mensaje"</strong> - Guarda cambios</li>
-                <li><strong>git status</strong> - Muestra el estado del repositorio</li>
-            </ul>
-        </section>
+            <div class="col-md-6">
+                <section>
+                    <h2>¿Por qué usar Git?</h2>
+                    <ul>
+                        <li>Control de versiones</li>
+                        <li>Trabajo colaborativo</li>
+                        <li>Historial de cambios</li>
+                        <li>Recuperación de versiones</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
 
-        <section>
-            <h2>Subir a GitHub</h2>
-            <ol>
-                <li>Crear repositorio en GitHub</li>
-                <li>Conectar con <strong>git remote add origin URL</strong></li>
-                <li>Subir con <strong>git push -u origin main</strong></li>
-            </ol>
-        </section>
-    </main>
+        <!-- Fila 2 -->
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <section>
+                    <h2>Comandos Básicos</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card p-2">
+                                <h5>git init</h5>
+                                <p>Inicializa repositorio</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-2">
+                                <h5>git add .</h5>
+                                <p>Agrega archivos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-2">
+                                <h5>git commit</h5>
+                                <p>Guarda cambios</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-2">
+                                <h5>git status</h5>
+                                <p>Estado del repo</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
 
-    <footer>
-        <p>© 2026 Tutorial de Git</p>
+        <!-- Fila 3 -->
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <section>
+                    <h2>Pasos para subir a GitHub</h2>
+                    <ol>
+                        <li>Crear repositorio</li>
+                        <li>git remote add origin URL</li>
+                        <li>git push -u origin main</li>
+                    </ol>
+                </section>
+            </div>
+
+            <div class="col-md-6">
+                <section>
+                    <h2>Ejemplo de flujo</h2>
+                    <pre>
+git init
+git add .
+git commit -m "Primer commit"
+git push
+                    </pre>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>© 2026 Tutorial de Git | Bootstrap aplicado</p>
     </footer>
 
 </body>
